@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bintang Budi Pangestu | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding-top: 80px; 
+            padding-bottom: 40px;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .project-card {
+            position: relative; /* Required for stretched-link to work properly */
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Bintang's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h2 id="dynamic-greeting" class="text-muted mb-2">Welcome</h2>
+            <h1 class="display-4 fw-bold">Bintang Budi Pangestu</h1>
+            <p class="lead">Informatics Engineer | ML Enthusiast | Educator</p>
+            <div class="mt-3">
+                <a href="https://github.com/BintangBudi/Profile" target="_blank" class="btn btn-outline-dark me-2">GitHub</a>
+                <a href="https://www.linkedin.com/in/bintangbudipangestu" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>A Final Year Informatics Engineering student with a distinction graduate from the Bangkit 2024 Machine Learning Path, complemented by a TensorFlow Developer Certification.</p> 
+                <p>Possessing a strong foundation in Machine Learning and Data Science, I am passionate about leveraging these skills to create impactful, data-driven solutions.</p>
+                <h5 class="mt-4">Technical Skills</h5>
+                <div>
+                    <span class="badge bg-primary me-1 mb-2">Python</span>
+                    <span class="badge bg-primary me-1 mb-2">JavaScript</span>
+                    <span class="badge bg-primary me-1 mb-2">Machine Learning</span>
+                    <span class="badge bg-primary me-1 mb-2">TensorFlow</span>
+                    <span class="badge bg-primary me-1 mb-2">Neural Networks</span>
+                    <span class="badge bg-primary me-1 mb-2">Data Analysis</span>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mt-md-0">
+                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 250px; height: 250px; font-size: 24px;">
+                    <img src="assets/profilePhoto.jpeg" alt="Bintang Budi Pangestu" class="img-fluid rounded-circle shadow" style="width: 250px; height: 250px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">Professional Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Machine Learning Cohort</h5>
+                            <h6 class="card-subtitle mb-2 text-primary">Bangkit Academy 2024 Batch 2 led by Google, Tokopedia, Gojek, & Traveloka</h6>
+                            <p class="text-muted small">September 2024 - December 2024</p>
+                            <p class="card-text">Developed an NLP-powered chatbot for fashion recommendations, utilizing Deep Learning to suggest outfits based on weather data and user preferences as a final project</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Programming Teacher</h5>
+                            <h6 class="card-subtitle mb-2 text-primary">Timedoor Academy, Pontianak</h6>
+                            <p class="text-muted small">March 2024 - June 2025</p>
+                            <ul>
+                                <li>Guided students in web development through JavaScript and web design modules.</li>
+                                <li>Led advanced courses for teenagers in emerging technologies, including AI Machine Learning, Computer Vision, and Python for Data Science.</li>
+                                <li>Prepared comprehensive progress reports and fostered strong parent-teacher partnerships.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="projects" class="container">
+        <div class="row mb-5 mt-4">
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Selected Projects</h2>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 project-card">
+                    <img src="assets/FasreconApp.png" class="card-img-top" alt="NLP Chatbot Interface">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://github.com/BintangBudi/Fasrecon_App" target="_blank" class="text-dark text-decoration-none stretched-link">NLP Fashion Chatbot</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Bangkit Academy Final Project</h6>
+                        <p class="card-text">Developed an NLP-powered chatbot utilizing Deep Learning to suggest outfit recommendations based on live weather data and specific user preferences.</p>
+                        <span class="badge bg-secondary">Python</span>
+                        <span class="badge bg-secondary">TensorFlow</span>
+                        <span class="badge bg-secondary">NLP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 project-card">
+                    <img src="assets/aipowered.png" class="card-img-top" alt="AI Agent Concept">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://github.com/BintangBudi/AI-Powered-Skill-Gap-Analyst" target="_blank" class="text-dark text-decoration-none stretched-link">AI Powered Skill Gap Analysis</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Intelligent assistant for a technical recruiter</h6>
+                        <p class="card-text">A multi-agent system designed to act as an intelligent assistant for a technical recruiter.</p>
+                        <span class="badge bg-secondary">AI Agent</span>
+                        <span class="badge bg-secondary">LLM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 project-card">
+                    <img src="assets/educationProblem.png" class="card-img-top" alt="Data Dashboard">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://github.com/BintangBudi/Menyelesaikan-Permasalahan-Institusi-Pendidikan" target="_blank" class="text-dark text-decoration-none stretched-link">Resolving Educational Institution Problems</a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Data Analysis</h6>
+                        <p class="card-text">A data analysis and dashboard project that identifies key problems in the education sector.</p>
+                        <span class="badge bg-secondary">Data Analysis</span>
+                        <span class="badge bg-secondary">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; <span id="current-year"></span> Bintang Budi Pangestu. Pontianak, Kalimantan Barat.</p>
+            <p class="mb-0 small"><a href="mailto:bintangbudi61@gmail.com" class="text-white text-decoration-none">bintangbudi61@gmail.com</a> | +62 896 9205 5574</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function setGreeting() {
+            const hour = new Date().getHours();
+            let greetingText = "Welcome";
+            
+            if (hour >= 5 && hour < 12) greetingText = "Good Morning";
+            else if (hour >= 12 && hour < 18) greetingText = "Good Afternoon";
+            else greetingText = "Good Evening";
+
+            document.getElementById('dynamic-greeting').textContent = greetingText + ", I am";
+        }
+
+        function setCurrentYear() {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setGreeting();
+            setCurrentYear();
+        });
+    </script>
+</body>
+</html>
